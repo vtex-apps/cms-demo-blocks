@@ -5,16 +5,23 @@
     "test": "vtex-test-tools test"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-intl": "^3.12.0"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.10",
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.8",
     "@types/react": "^16.9.31",
     "@vtex/test-tools": "^3.1.0",
     "@vtex/tsconfig": "^0.4.4",
-    "typescript": "^3.9.6"
+    "typescript": "3.8.3",
+    "vtex.flex-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.flex-layout@0.15.0/public/@types/vtex.flex-layout",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.111.0/public/@types/vtex.render-runtime",
+    "vtex.store-components": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.120.2/public/_types/react",
+    "vtex.store-image": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.4.5/public/@types/vtex.store-image",
+    "vtex.store-link": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.6.0/public/@types/vtex.store-link"
   }
 }

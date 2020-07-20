@@ -10,7 +10,13 @@
     "docs": "0.x",
     "store": "0.x"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vtex.flex-layout": "0.x",
+    "vtex.store-components": "3.x",
+    "vtex.store-image": "0.x",
+    "vtex.store-link": "0.x",
+    "vtex.native-types": "0.x"
+  },
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }

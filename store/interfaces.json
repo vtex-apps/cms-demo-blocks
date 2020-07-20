@@ -1,0 +1,14 @@
+{
+  "positioned-search-bar": {
+    "component": "PositionedSearchBar",
+    "content": {
+      "$ref": "#/definitions/PositionedSearchBar"
+    }
+  },
+  "positioned-image": {
+    "component": "PositionedImage",
+    "content": {
+      "$ref": "#/definitions/PositionedImage"
+    }
+  }
+}
