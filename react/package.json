@@ -1,13 +1,11 @@
 {
-  "name": "CHANGE_ME",
+  "name": "cms-demo-blocks",
   "version": "0.0.0",
   "scripts": {
     "test": "vtex-test-tools test"
   },
   "dependencies": {
-    "apollo-client": "^2.6.8",
     "react": "^16.12.0",
-    "react-apollo": "^3.1.3",
     "react-dom": "^16.12.0",
     "react-intl": "^3.12.0"
   },
