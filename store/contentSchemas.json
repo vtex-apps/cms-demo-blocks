@@ -21,7 +21,7 @@
                 }
               },
               "description": {
-                "$ref": "vtex.native-types:/#definitions/text",
+                "$ref": "app:vtex.native-types#/definitions/text",
                 "description": "Utilizada para a descrição alt da imagem"
               },
               "link": {
