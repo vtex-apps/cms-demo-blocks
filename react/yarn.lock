@@ -5015,6 +5015,18 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.121.0/public/@types/vtex.render-runtime":
+  version "8.121.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.121.0/public/@types/vtex.render-runtime#2d5cfba8888df1844a808828b87e5331ab5baa59"
+
+"vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.15.0/public/@types/vtex.slider-layout":
+  version "0.15.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.15.0/public/@types/vtex.slider-layout#3457d2937590d5fea8b3999be4789ef133421ddf"
+
+"vtex.store-image@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.5.2/public/@types/vtex.store-image":
+  version "0.5.2"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.5.2/public/@types/vtex.store-image#e4184c2d23cbe2f7ce6b6c5b6715c7c2925f682a"
+
 w3c-hr-time@^1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/w3c-hr-time/-/w3c-hr-time-1.0.2.tgz#0a89cdf5cc15822df9c360543676963e0cc308cd"

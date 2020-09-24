@@ -1,0 +1,8 @@
+{
+  "custom-carousel": {
+    "component": "Carousel",
+    "content": {
+      "$ref": "#/definitions/Carousel"
+    }
+  }
+}

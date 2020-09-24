@@ -1,0 +1,38 @@
+{
+  "definitions": {
+    "Carousel": {
+      "title": "Carousel",
+      "description": "Carousel component",
+      "type": "object",
+      "properties": {
+        "images": {
+          "title": "Banners",
+          "type": "array",
+          "items": {
+            "title": "Banner",
+            "type": "object",
+            "properties": {
+              "image": {
+                "title": "Image",
+                "description": "A picture",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "description": {
+                "$ref": "vtex.native-types:/#definitions/text",
+                "description": "Utilizada para a descrição alt da imagem"
+              },
+              "link": {
+                "title": "Endereço URL para link",
+                "description": "Link of the picture",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

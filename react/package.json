@@ -19,6 +19,9 @@
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
     "prop-types": "^15.7.2",
-    "typescript": "3.8.3"
+    "typescript": "3.8.3",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.121.0/public/@types/vtex.render-runtime",
+    "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.15.0/public/@types/vtex.slider-layout",
+    "vtex.store-image": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.5.2/public/@types/vtex.store-image"
   }
 }
