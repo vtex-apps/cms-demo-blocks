@@ -1,8 +1,8 @@
 {
   "definitions": {
     "Carousel": {
-      "title": "Carousel",
-      "description": "Carousel component",
+      "title": "Carousel with banners",
+      "description": "Carousel with banners",
       "type": "object",
       "properties": {
         "images": {
@@ -13,7 +13,41 @@
             "type": "object",
             "properties": {
               "image": {
-                "title": "Image",
+                "title": "Banner",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "description": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "title": "Image description",
+                "description": "Used to description the alt of the image"
+              },
+              "link": {
+                "title": "URL address to link",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Banners": {
+      "title": "Banners",
+      "description": "A component of Banners",
+      "type": "object",
+      "properties": {
+        "images": {
+          "title": "Images",
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "title": "Banner",
+            "type": "object",
+            "properties": {
+              "image": {
+                "title": "Banner",
                 "description": "A picture",
                 "type": "string",
                 "widget": {
@@ -22,17 +56,64 @@
               },
               "description": {
                 "$ref": "app:vtex.native-types#/definitions/text",
-                "description": "Utilizada para a descrição alt da imagem"
+                "title": "Image description",
+                "description": "Used to description the alt of the image"
               },
               "link": {
-                "title": "Endereço URL para link",
-                "description": "Link of the picture",
+                "title": "URL address to link",
                 "type": "string"
               }
             }
           }
         }
       }
+    },
+    "Shelf": {
+      "title": "Carousel with products",
+      "description": "Carousel with products filtered by a specific property",
+      "type": "object",
+      "properties": {
+        "shelfTitle": {
+          "title": "Title",
+          "type": "string"
+        },
+        "products": {
+          "title": "Products",
+          "properties": {
+            "filterOption": {
+              "title": "Origin",
+              "type": "string",
+              "enum": ["OrderByTopSaleDESC", "collection"],
+              "enumNames": [
+                "Show the best selling products",
+                "Display products from an existing collection"
+              ],
+              "default": "OrderByTopSaleDESC"
+            }
+          },
+          "required": ["filterOption"],
+          "dependencies": {
+            "filterOption": {
+              "oneOf": [
+                {
+                  "title": "Products",
+                  "properties": {
+                    "filterOption": {
+                      "enum": ["collection"]
+                    },
+                    "collection": {
+                      "title": "Collection ID",
+                      "type": "string"
+                    }
+                  },
+                  "required": ["collection"]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "required": ["products"]
     }
   }
 }
