@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "cms-demo-blocks",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "title": "CMS Demo Blocks",
   "description": "App with CMS blocks to test and to be used in demos",
   "builders": {
@@ -21,7 +21,9 @@
     "vtex.css-handles": "0.x",
     "marinbrasil.store-components": "0.x"
   },
-  "registries": ["smartcheckout"],
+  "registries": [
+    "smartcheckout"
+  ],
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
