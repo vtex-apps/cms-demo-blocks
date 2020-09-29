@@ -29,25 +29,14 @@ interface SpecfiicationFilter {
   value?: string
 }
 
-type FilterOption =
-  | 'OrderByTopSaleDESC' // option
-  | 'collection'
-// | 'OrderByReleaseDateDESC'
-// | 'OrderByBestDiscountDESC'
-// | 'OrderByPriceDESC'
-// | 'OrderByPriceASC'
-// | 'OrderByNameASC'
-// | 'OrderByNameDESC'
+type FilterOption = 'OrderByTopSaleDESC' | 'collection'
 
 interface SummaryProps {
   product: any
 }
 
-// const CSS_HANDLES = ['summaryContainer'] as const
-
 function ProductSummary(props: SummaryProps) {
   const { product } = props
-  // const handles = useCssHandles(CSS_HANDLES)
 
   return (
     <ProductSummaryCustom product={product}>
