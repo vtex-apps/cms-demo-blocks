@@ -1,8 +1,8 @@
 {
   "definitions": {
     "Carousel": {
-      "title": "Carousel",
-      "description": "Carousel component",
+      "title": "Carrosel com banners",
+      "description": "Carrosel com banners",
       "type": "object",
       "properties": {
         "images": {
@@ -13,8 +13,7 @@
             "type": "object",
             "properties": {
               "image": {
-                "title": "Image",
-                "description": "A picture",
+                "title": "Banner",
                 "type": "string",
                 "widget": {
                   "ui:widget": "image-uploader"
@@ -22,6 +21,7 @@
               },
               "description": {
                 "$ref": "app:vtex.native-types#/definitions/text",
+                "title": "Descrição da imagem",
                 "description": "Utilizada para a descrição alt da imagem"
               },
               "link": {
