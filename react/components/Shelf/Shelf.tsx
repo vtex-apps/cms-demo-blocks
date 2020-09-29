@@ -16,10 +16,10 @@ import { useCssHandles } from 'vtex.css-handles'
 import './styles.css'
 
 interface ShelfProps {
-  orderBy?: OrderBy
+  products?: { filterOption?: FilterOption; collection?: string }
   category?: string
   maxItems?: number
-  collection?: string
+  shelfTitle?: string
   specificationFilters?: SpecfiicationFilter[]
   hideUnavailableItems?: boolean
 }
@@ -29,14 +29,15 @@ interface SpecfiicationFilter {
   value?: string
 }
 
-type OrderBy =
-  | 'OrderByTopSaleDESC'
-  | 'OrderByReleaseDateDESC'
-  | 'OrderByBestDiscountDESC'
-  | 'OrderByPriceDESC'
-  | 'OrderByPriceASC'
-  | 'OrderByNameASC'
-  | 'OrderByNameDESC'
+type FilterOption =
+  | 'OrderByTopSaleDESC' // option
+  | 'collection'
+// | 'OrderByReleaseDateDESC'
+// | 'OrderByBestDiscountDESC'
+// | 'OrderByPriceDESC'
+// | 'OrderByPriceASC'
+// | 'OrderByNameASC'
+// | 'OrderByNameDESC'
 
 interface SummaryProps {
   product: any
@@ -77,10 +78,12 @@ const SHELF_CSS_HANDLES = [
 
 function Shelf(props: ShelfProps) {
   const {
-    orderBy,
     category,
     maxItems,
-    collection,
+    products: { filterOption, collection } = {
+      filterOption: 'OrderByTopSaleDESC',
+    },
+    shelfTitle = 'Shelf',
     hideUnavailableItems,
     specificationFilters,
   } = props
@@ -97,17 +100,17 @@ function Shelf(props: ShelfProps) {
   return (
     <div className={handles.customShelfContainer}>
       <h2 className={titleClasses}>
-        Os queridinhos <span className={underscoreClasses} />
+        {shelfTitle} <span className={underscoreClasses} />
       </h2>
       <div className={handles.customSliderContainer}>
         <ProductSummaryList
-          orderBy={orderBy}
+          orderBy={filterOption}
           maxItems={maxItems}
           category={category}
-          collection={collection}
           ProductSummary={ProductSummary}
           hideUnavailableItems={hideUnavailableItems}
           specificationFilters={specificationFilters}
+          collection={filterOption === 'collection' ? collection : undefined}
         >
           <SliderLayout
             showNavigationArrows="never"

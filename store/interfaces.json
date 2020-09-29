@@ -6,7 +6,10 @@
     }
   },
   "custom-shelf": {
-    "component": "Shelf"
+    "component": "Shelf",
+    "content": {
+      "$ref": "#/definitions/Shelf"
+    }
   },
   "custom-banners": {
     "component": "Banners",

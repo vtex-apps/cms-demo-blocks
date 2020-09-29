@@ -47,7 +47,6 @@
             "type": "object",
             "properties": {
               "image": {
-                "title": "Image",
                 "description": "A picture",
                 "type": "string",
                 "widget": {
@@ -66,6 +65,53 @@
           }
         }
       }
+    },
+    "Shelf": {
+      "title": "Carrosel com produtos",
+      "description": "Carrosel com produtos filtrados por uma propriedade específica",
+      "type": "object",
+      "properties": {
+        "shelfTitle": {
+          "title": "Título",
+          "type": "string"
+        },
+        "products": {
+          "title": "Produtos",
+          "properties": {
+            "filterOption": {
+              "title": "Origem",
+              "type": "string",
+              "enum": ["OrderByTopSaleDESC", "collection"],
+              "enumNames": [
+                "Exibir os produtos mais vendidos",
+                "Exibir produtos de uma coleção existente"
+              ],
+              "default": "OrderByTopSaleDESC"
+            }
+          },
+          "required": ["filterOption"],
+          "dependencies": {
+            "filterOption": {
+              "oneOf": [
+                {
+                  "title": "Produtos",
+                  "properties": {
+                    "filterOption": {
+                      "enum": ["collection"]
+                    },
+                    "collection": {
+                      "title": "ID da coleção",
+                      "type": "string"
+                    }
+                  },
+                  "required": ["collection"]
+                }
+              ]
+            }
+          }
+        }
+      },
+      "required": ["products"]
     }
   }
 }
