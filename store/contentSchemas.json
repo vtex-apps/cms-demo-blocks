@@ -13,7 +13,7 @@
             "type": "object",
             "properties": {
               "image": {
-                "title": "Banner",
+                "title": " ",
                 "type": "string",
                 "widget": {
                   "ui:widget": "image-uploader"
@@ -47,7 +47,7 @@
             "type": "object",
             "properties": {
               "image": {
-                "title": "Banner",
+                "title": " ",
                 "description": "A picture",
                 "type": "string",
                 "widget": {
