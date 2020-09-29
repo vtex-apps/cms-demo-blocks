@@ -26,7 +26,40 @@
               },
               "link": {
                 "title": "Endereço URL para link",
-                "description": "Link of the picture",
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "Banners": {
+      "title": "Banners",
+      "description": "A component of Banners",
+      "type": "object",
+      "properties": {
+        "images": {
+          "title": "Images",
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "title": "Banner",
+            "type": "object",
+            "properties": {
+              "image": {
+                "title": "Image",
+                "description": "A picture",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "description": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "description": "Utilizada para a descrição alt da imagem"
+              },
+              "link": {
+                "title": "Endereço URL para link",
                 "type": "string"
               }
             }

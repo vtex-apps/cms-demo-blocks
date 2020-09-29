@@ -9,6 +9,9 @@
     "component": "Shelf"
   },
   "custom-banners": {
-    "component": "Banners"
+    "component": "Banners",
+    "content": {
+      "$ref": "#/definitions/Banners"
+    }
   }
 }
