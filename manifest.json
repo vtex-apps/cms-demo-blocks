@@ -6,10 +6,21 @@
   "description": "App with CMS blocks to test and to be used in demos",
   "builders": {
     "react": "3.x",
+    "store": "0.x",
     "messages": "1.x",
     "docs": "0.x"
   },
-  "dependencies": {},
+  "dependencies": {
+    "vtex.store-image": "0.x",
+    "vtex.slider-layout": "0.x",
+    "vtex.native-types": "0.x",
+    "vtex.product-summary": "2.x",
+    "vtex.stack-layout": "0.x",
+    "vtex.add-to-cart-button": "0.x",
+    "vtex.product-price": "1.x",
+    "vtex.css-handles": "0.x",
+    "marinbrasil.store-components": "0.x"
+  },
   "registries": ["smartcheckout"],
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"

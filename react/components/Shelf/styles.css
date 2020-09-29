@@ -1,0 +1,121 @@
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans:300,400,600,700&display=swap';
+
+.container {
+  transition: all 0.15s ease;
+  border: 3px solid transparent;
+  outline: 1px solid #eee !important;
+  width: 100%;
+  position: relative;
+  height: 500px;
+  padding: 10px;
+  margin: 5px;
+}
+.container:hover {
+  box-shadow: 0 0 15px rgba(204, 204, 204, 0.5);
+}
+
+.element {
+  justify-content: space-between;
+  padding-bottom: 0;
+}
+
+.container:hover
+  .element
+  /* :global(.vtex-product-summary-2-x-element) */
+  :global(.vtex-button) {
+  background: #05377f;
+  box-shadow: 0 0 15px rgba(5, 55, 127, 0.25);
+}
+
+/* PRODUCT PRICE */
+
+.element :global(.vtex-e-main-price-marin) {
+  position: relative;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+.element :global(.vtex-e-main-price-marin) :global(.vtex-e-price-big) {
+  font-size: 18px;
+}
+
+.element :global(.vtex-e-main-price-marin) :global(.vtex-e-price-parcels) {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+/* PRODUCT-NAME */
+
+.element .nameContainer {
+  padding: 15px 0 0;
+}
+
+.element .nameContainer .productNameContainer {
+  font-size: 14px;
+  height: auto;
+  margin-bottom: 20px;
+  line-height: 1.6;
+  text-align: start;
+  font-weight: 400;
+  color: #071923;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  font-family: Josefin Sans, sans-serif;
+}
+
+/* SLIDER LAYOUT */
+
+.customSliderContainer {
+  margin-top: 1rem;
+}
+
+.paginationDotsContainer {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: absolute;
+  top: -8%;
+  right: 2%;
+  left: auto;
+  bottom: auto;
+}
+
+/* SHELF TITLE */
+
+.shelfTitle {
+  font-size: 20px;
+}
+
+.shelfTitle .titleUnderscore {
+  height: 4px;
+  background-color: #016ab3;
+  width: 125px;
+  bottom: 0;
+  left: 0;
+  border-radius: 15px;
+}
+
+/* DISCOUNT BADGES */
+
+:global(.vtex-store-components-3-x-discountInsideContainer):not(:global(.marinbrasil-store-components-0-x-discountInsideContainer)) {
+  display: none;
+}
+
+:global(.vtex-store-components-3-x-discountInsideContainer):global(.marinbrasil-store-components-0-x-discountInsideContainer) {
+  font-size: 0.7rem;
+  color: #fff;
+  width: 50px;
+  height: auto;
+  position: absolute;
+  left: auto;
+  top: auto;
+  right: 0;
+  padding: 4px 8px;
+  /* display: flex; */
+  background-color: #29bf17;
+  z-index: 2;
+  line-height: 15px;
+  border-radius: 5px;
+}
