@@ -1,8 +1,8 @@
 {
   "definitions": {
     "Carousel": {
-      "title": "Carrosel com banners",
-      "description": "Carrosel com banners",
+      "title": "Carousel with banners",
+      "description": "Carousel with banners",
       "type": "object",
       "properties": {
         "images": {
@@ -21,11 +21,11 @@
               },
               "description": {
                 "$ref": "app:vtex.native-types#/definitions/text",
-                "title": "Descrição da imagem",
-                "description": "Utilizada para a descrição alt da imagem"
+                "title": "Image description",
+                "description": "Used to description the alt of the image"
               },
               "link": {
-                "title": "Endereço URL para link",
+                "title": "URL address to link",
                 "type": "string"
               }
             }
@@ -47,6 +47,7 @@
             "type": "object",
             "properties": {
               "image": {
+                "title": "Banner",
                 "description": "A picture",
                 "type": "string",
                 "widget": {
@@ -55,10 +56,11 @@
               },
               "description": {
                 "$ref": "app:vtex.native-types#/definitions/text",
-                "description": "Utilizada para a descrição alt da imagem"
+                "title": "Image description",
+                "description": "Used to description the alt of the image"
               },
               "link": {
-                "title": "Endereço URL para link",
+                "title": "URL address to link",
                 "type": "string"
               }
             }
@@ -67,24 +69,24 @@
       }
     },
     "Shelf": {
-      "title": "Carrosel com produtos",
-      "description": "Carrosel com produtos filtrados por uma propriedade específica",
+      "title": "Carousel with products",
+      "description": "Carousel with products filtered by a specific property",
       "type": "object",
       "properties": {
         "shelfTitle": {
-          "title": "Título",
+          "title": "Title",
           "type": "string"
         },
         "products": {
-          "title": "Produtos",
+          "title": "Products",
           "properties": {
             "filterOption": {
-              "title": "Origem",
+              "title": "Origin",
               "type": "string",
               "enum": ["OrderByTopSaleDESC", "collection"],
               "enumNames": [
-                "Exibir os produtos mais vendidos",
-                "Exibir produtos de uma coleção existente"
+                "Show the best selling products",
+                "Display products from an existing collection"
               ],
               "default": "OrderByTopSaleDESC"
             }
@@ -94,13 +96,13 @@
             "filterOption": {
               "oneOf": [
                 {
-                  "title": "Produtos",
+                  "title": "Products",
                   "properties": {
                     "filterOption": {
                       "enum": ["collection"]
                     },
                     "collection": {
-                      "title": "ID da coleção",
+                      "title": "Collection ID",
                       "type": "string"
                     }
                   },
