@@ -4,5 +4,8 @@
     "content": {
       "$ref": "#/definitions/Carousel"
     }
+  },
+  "custom-shelf": {
+    "component": "Shelf"
   }
 }

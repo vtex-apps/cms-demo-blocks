@@ -3684,6 +3684,10 @@ map-visit@^1.0.0:
   dependencies:
     object-visit "^1.0.0"
 
+"marinbrasil.store-components@http://marinbrasil.vtexassets.com/_v/public/typings/v1/marinbrasil.store-components@0.2.4/public/_types/react":
+  version "0.0.0"
+  resolved "http://marinbrasil.vtexassets.com/_v/public/typings/v1/marinbrasil.store-components@0.2.4/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
+
 merge-stream@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/merge-stream/-/merge-stream-2.0.0.tgz#52823629a14dd00c9770fb6ad47dc6310f2c1f60"
@@ -5015,13 +5019,37 @@ verror@1.10.0:
     core-util-is "1.0.2"
     extsprintf "^1.2.0"
 
+"vtex.add-to-cart-button@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.18.0/public/@types/vtex.add-to-cart-button":
+  version "0.18.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.18.0/public/@types/vtex.add-to-cart-button#21d1a9b72c1dd1ef61ad87e576e871729ade7f05"
+
+"vtex.css-handles@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles":
+  version "0.4.4"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles#8c45c6decf9acd2b944e07261686decff93d6422"
+
+"vtex.native-types@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.7.1/public/@types/vtex.native-types":
+  version "0.7.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.7.1/public/@types/vtex.native-types#a197484a2fdcee5c61a6d20ad6c994faa58380f5"
+
+"vtex.product-price@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.9.0/public/@types/vtex.product-price":
+  version "1.9.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.9.0/public/@types/vtex.product-price#77db9420e9c8dca614b89a1bdbb6cf4499fa4ba1"
+
+"vtex.product-summary@https://klynger--marinbrasil.myvtex.com/_v/private/typings/linked/v1/vtex.product-summary@2.60.0+build1601053693/public/@types/vtex.product-summary":
+  version "2.60.0"
+  resolved "https://klynger--marinbrasil.myvtex.com/_v/private/typings/linked/v1/vtex.product-summary@2.60.0+build1601053693/public/@types/vtex.product-summary#a53dc63addfcc3aa94cf9e574ce0c5447a34ea6d"
+
 "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.121.0/public/@types/vtex.render-runtime":
   version "8.121.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.121.0/public/@types/vtex.render-runtime#2d5cfba8888df1844a808828b87e5331ab5baa59"
 
-"vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.15.0/public/@types/vtex.slider-layout":
-  version "0.15.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.15.0/public/@types/vtex.slider-layout#3457d2937590d5fea8b3999be4789ef133421ddf"
+"vtex.slider-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.15.1/public/@types/vtex.slider-layout":
+  version "0.15.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.15.1/public/@types/vtex.slider-layout#6eba41aac1265df0270883354b4dc5f9e04b6300"
+
+"vtex.stack-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.stack-layout@0.1.0/public/@types/vtex.stack-layout":
+  version "0.1.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.stack-layout@0.1.0/public/@types/vtex.stack-layout#79bcd9f70b4b6926b85686be14879a3b90d52c63"
 
 "vtex.store-image@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.5.2/public/@types/vtex.store-image":
   version "0.5.2"

@@ -9,7 +9,7 @@ const ITEMS_PER_PAGE = {
 }
 
 function Carousel(props: Props) {
-  const { images } = props
+  const { images = [] } = props
 
   const convertedImages = React.useMemo(
     () =>
@@ -17,11 +17,13 @@ function Carousel(props: Props) {
         description,
         image,
         mobileImage: image,
-        experimentalPreventLayoutShift: true,
-        link: link ?? {
-          url: link,
-          noFollow: false,
-        },
+        // experimentalPreventLayoutShift: true,
+        link: link
+          ? {
+              url: link,
+              noFollow: false,
+            }
+          : undefined,
       })),
     [images]
   )

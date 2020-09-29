@@ -5,12 +5,14 @@
     "test": "vtex-test-tools test"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-intl": "^3.12.0"
   },
   "devDependencies": {
     "@apollo/react-testing": "^3.1.3",
+    "@types/classnames": "^2.2.10",
     "@types/jest": "^25.1.4",
     "@types/node": "^13.9.8",
     "@types/react": "^16.9.31",
@@ -18,10 +20,17 @@
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
+    "marinbrasil.store-components": "http://marinbrasil.vtexassets.com/_v/public/typings/v1/marinbrasil.store-components@0.2.4/public/_types/react",
     "prop-types": "^15.7.2",
     "typescript": "3.8.3",
+    "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.18.0/public/@types/vtex.add-to-cart-button",
+    "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles",
+    "vtex.native-types": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.7.1/public/@types/vtex.native-types",
+    "vtex.product-price": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.9.0/public/@types/vtex.product-price",
+    "vtex.product-summary": "https://klynger--marinbrasil.myvtex.com/_v/private/typings/linked/v1/vtex.product-summary@2.60.0+build1601053693/public/@types/vtex.product-summary",
     "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.121.0/public/@types/vtex.render-runtime",
-    "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.15.0/public/@types/vtex.slider-layout",
+    "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.15.1/public/@types/vtex.slider-layout",
+    "vtex.stack-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.stack-layout@0.1.0/public/@types/vtex.stack-layout",
     "vtex.store-image": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.5.2/public/@types/vtex.store-image"
   }
 }
