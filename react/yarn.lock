@@ -5045,9 +5045,9 @@ verror@1.10.0:
   version "1.9.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-price@1.9.0/public/@types/vtex.product-price#77db9420e9c8dca614b89a1bdbb6cf4499fa4ba1"
 
-"vtex.product-summary@https://klynger--marinbrasil.myvtex.com/_v/private/typings/linked/v1/vtex.product-summary@2.60.0+build1601053693/public/@types/vtex.product-summary":
+"vtex.product-summary@https://klynger--marinbrasil.myvtex.com/_v/private/typings/linked/v1/vtex.product-summary@2.60.0/public/@types/vtex.product-summary":
   version "2.60.0"
-  resolved "https://klynger--marinbrasil.myvtex.com/_v/private/typings/linked/v1/vtex.product-summary@2.60.0+build1601053693/public/@types/vtex.product-summary#a53dc63addfcc3aa94cf9e574ce0c5447a34ea6d"
+  resolved "https://klynger--marinbrasil.myvtex.com/_v/private/typings/linked/v1/vtex.product-summary@2.60.0/public/@types/vtex.product-summary#a53dc63addfcc3aa94cf9e574ce0c5447a34ea6d"
 
 "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.121.0/public/@types/vtex.render-runtime":
   version "8.121.0"
