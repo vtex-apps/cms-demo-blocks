@@ -2,15 +2,19 @@ import * as React from 'react'
 import { ImageList } from 'vtex.store-image'
 import { SliderLayout } from 'vtex.slider-layout'
 
+interface Image {
+  image: string
+  description: string
+  link?: string
+}
+
 const ITEMS_PER_PAGE = {
   desktop: 1,
   tablet: 1,
   phone: 1,
 }
 
-function Carousel(props: Props) {
-  const { images = [] } = props
-
+function Carousel(images: Image[]) {
   const convertedImages = React.useMemo(
     () =>
       images.map(({ description, image, link }) => ({
@@ -36,13 +40,3 @@ function Carousel(props: Props) {
 }
 
 export default Carousel
-
-interface Props {
-  images: Image[]
-}
-
-interface Image {
-  image: string
-  description: string
-  link?: string
-}

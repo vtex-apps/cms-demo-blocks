@@ -9,14 +9,9 @@ interface ImageType {
   link?: string
 }
 
-interface Props {
-  images?: ImageType[]
-}
-
 const CSS_HANDLES = ['bannerContainer', 'bannerImageWrapper'] as const
 
-function Banners(props: Props) {
-  const { images = [] } = props
+function Banners(images: ImageType[]) {
   const handles = useCssHandles(CSS_HANDLES)
   const containerClasses = classnames(handles.bannerContainer, 'flex pv7 ph0')
 
