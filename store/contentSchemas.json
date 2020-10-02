@@ -1,8 +1,8 @@
 {
   "definitions": {
     "Carousel": {
-      "title": "Carousel with banners",
-      "description": "Carousel with banners",
+      "title": "Carousel with Banners",
+      "description": "Slider with large landscape images that link to pages",
       "type": "object",
       "properties": {
         "images": {
@@ -35,7 +35,7 @@
     },
     "Banners": {
       "title": "Banners",
-      "description": "A component of Banners",
+      "description": "Up to two small landscape images that link to pages",
       "type": "object",
       "properties": {
         "images": {
@@ -69,8 +69,8 @@
       }
     },
     "Shelf": {
-      "title": "Carousel with products",
-      "description": "Carousel with products filtered by a specific property",
+      "title": "Carousel with Products",
+      "description": "Slider with products from a collection or the best selling ones",
       "type": "object",
       "properties": {
         "shelfTitle": {
