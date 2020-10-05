@@ -93,13 +93,17 @@ function Shelf(props: ShelfProps) {
       </h2>
       <div className={handles.customSliderContainer}>
         <ProductSummaryList
-          orderBy={filterOption}
+          orderBy={
+            filterOption === 'OrderByTopSaleDESC' ? filterOption : undefined
+          }
           maxItems={maxItems}
           category={category}
           ProductSummary={ProductSummary}
           hideUnavailableItems={hideUnavailableItems}
           specificationFilters={specificationFilters}
-          collection={filterOption === 'collection' ? collection : undefined}
+          collection={
+            filterOption === 'collection' && collection ? collection : undefined
+          }
         >
           <SliderLayout
             showNavigationArrows="never"
