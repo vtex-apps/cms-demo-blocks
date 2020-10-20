@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "cms-demo-blocks",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "title": "CMS Demo Blocks",
   "description": "App with CMS blocks to test and to be used in demos",
   "builders": {
