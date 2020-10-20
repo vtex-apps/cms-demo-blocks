@@ -3,26 +3,32 @@
     "Carousel": {
       "title": "Carousel with Banners",
       "description": "Slider with large landscape images that link to pages",
-      "type": "array",
-      "items": {
-        "title": "Banner",
-        "type": "object",
-        "properties": {
-          "image": {
-            "title": " ",
-            "type": "string",
-            "widget": {
-              "ui:widget": "image-uploader"
+      "type": "object",
+      "properties": {
+        "images": {
+          "title": " ",
+          "type": "array",
+          "items": {
+            "title": "Banner",
+            "type": "object",
+            "properties": {
+              "image": {
+                "title": " ",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "description": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "title": "Image description",
+                "description": "Used to description the alt of the image"
+              },
+              "link": {
+                "title": "URL address to link",
+                "type": "string"
+              }
             }
-          },
-          "description": {
-            "$ref": "app:vtex.native-types#/definitions/text",
-            "title": "Image description",
-            "description": "Used to description the alt of the image"
-          },
-          "link": {
-            "title": "URL address to link",
-            "type": "string"
           }
         }
       }
@@ -33,7 +39,7 @@
       "type": "object",
       "properties": {
         "banners": {
-          "title": "Banners",
+          "title": " ",
           "type": "array",
           "maxItems": 2,
           "items": {
