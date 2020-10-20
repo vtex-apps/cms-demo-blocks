@@ -11,7 +11,11 @@ interface ImageType {
 
 const CSS_HANDLES = ['bannerContainer', 'bannerImageWrapper'] as const
 
-function Banners(images: ImageType[]) {
+interface Props {
+  banners: ImageType[]
+}
+
+function Banners({ banners: images }: Props) {
   const handles = useCssHandles(CSS_HANDLES)
   const containerClasses = classnames(handles.bannerContainer, 'flex pv7 ph0')
 
