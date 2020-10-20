@@ -14,7 +14,11 @@ const ITEMS_PER_PAGE = {
   phone: 1,
 }
 
-function Carousel(images: Image[]) {
+interface Props {
+  images: Image[]
+}
+
+function Carousel({ images }: Props) {
   const convertedImages = React.useMemo(
     () =>
       images.map(({ description, image, link }) => ({
