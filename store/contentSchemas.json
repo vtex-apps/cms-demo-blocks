@@ -30,28 +30,34 @@
     "Banners": {
       "title": "Banners",
       "description": "Up to two small landscape images that link to pages",
-      "type": "array",
-      "maxItems": 2,
-      "items": {
-        "title": "Banner",
-        "type": "object",
-        "properties": {
-          "image": {
-            "title": " ",
-            "description": "A picture",
-            "type": "string",
-            "widget": {
-              "ui:widget": "image-uploader"
+      "type": "object",
+      "properties": {
+        "banners": {
+          "title": "Banners",
+          "type": "array",
+          "maxItems": 2,
+          "items": {
+            "title": "Banner",
+            "type": "object",
+            "properties": {
+              "image": {
+                "title": " ",
+                "description": "A picture",
+                "type": "string",
+                "widget": {
+                  "ui:widget": "image-uploader"
+                }
+              },
+              "description": {
+                "$ref": "app:vtex.native-types#/definitions/text",
+                "title": "Image description",
+                "description": "Used to description the alt of the image"
+              },
+              "link": {
+                "title": "URL address to link",
+                "type": "string"
+              }
             }
-          },
-          "description": {
-            "$ref": "app:vtex.native-types#/definitions/text",
-            "title": "Image description",
-            "description": "Used to description the alt of the image"
-          },
-          "link": {
-            "title": "URL address to link",
-            "type": "string"
           }
         }
       }

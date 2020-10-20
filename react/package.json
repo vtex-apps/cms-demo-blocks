@@ -22,7 +22,7 @@
     "graphql": "^14.6.0",
     "marinbrasil.store-components": "http://marinbrasil.vtexassets.com/_v/public/typings/v1/marinbrasil.store-components@0.2.4/public/_types/react",
     "prop-types": "^15.7.2",
-    "typescript": "3.8.3",
+    "typescript": "3.9.7",
     "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.18.0/public/@types/vtex.add-to-cart-button",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@0.4.4/public/@types/vtex.css-handles",
     "vtex.native-types": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.native-types@0.7.1/public/@types/vtex.native-types",
